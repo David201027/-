@@ -8,9 +8,9 @@ function convertToScientific() {
     let exponent = Math.floor(Math.log10(Math.abs(num)));
     let mantissa = num / Math.pow(10, exponent);
 
-    let scientificNotation = mantissa.toFixed(15) + ' * 10^' + exponent;
+    let scientificNotation = mantissa.toFixed(5) + ' × 10^' + exponent;
 
-    document.getElementById('result').textContent = scientificNotation;
+    document.getElementById('result').textContent = ' אפסים בסוף לא לכתוב ' + scientificNotation;
 }
 
 function convertToRegular() {
