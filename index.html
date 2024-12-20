@@ -8,11 +8,13 @@
 </head>
 <body>
     <div class="calculator">
-        <h2>המרת מספר לרישום מדעי</h2>
-        <input type="number" id="numberInput" placeholder="הזן מספר" />
-        <button onclick="convertToScientific()">המר</button>
+        <h2>המרת מספר</h2>
+        <input type="text" id="numberInput" placeholder="הזן מספר או רישום מדעי" />
+        <button onclick="convertToScientific()">המר למספר מדעי</button>
+        <button onclick="convertToRegular()">המר למספר רגיל</button>
         <p>תוצאה: <span id="result"></span></p>
     </div>
+
     <script src="./js/javascript.js"></script>
 </body>
 </html>
