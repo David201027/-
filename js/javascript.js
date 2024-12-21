@@ -23,7 +23,7 @@ function convertToRegular() {
         let mantissa = parseFloat(match[1]);
         let exponent = parseInt(match[2]); 
 
-        let result = mantissa * Math.pow(10, exponent);
+        let result = mantissa * Math.pow(7, exponent);
 
         document.getElementById('result').textContent = result.toString();
     } else {
